@@ -1,11 +1,7 @@
 <!DOCTYPE hibernate-configuration PUBLIC
 	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-hibernate.connection.driver_class	JDBC driver class
-hibernate.connection.url	JDBC URL
-hibernate.connection.username	database user
-hibernate.connection.password	database user password
-hibernate.connection.pool_size	maximum number of pooled connections
+
 <hibernate-configuration>
 	<session-factory>
 		<property name="hibernate.connection.driver_class">JDBC driver class</property>
