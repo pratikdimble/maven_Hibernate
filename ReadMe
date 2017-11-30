@@ -1,0 +1,42 @@
+*************************************
+Eclipse IDE-->New-->Project-->Maven Project-->Next-->
+                  select an Archetype(if it is standalone select:Quickstart and if it is Web Application select Web-app)-->
+                    Next(Enter artifactId i.e.project name)-->finish
+*******************
+write all java files,configuration files undet src/main/java with as your package names
+*************************************
+POM.xml--->
+for repositories (dependencies) go to the url == https://mvnrepository.com/
+and search the repositories you want and select any one from list that you want to add
+after that select the version and
+then cpoy that dependency and paste in pom.xml in betweeen <dependencies> tag..
+the libraries are automatically downloads and store in local repositories
+*************************************
+Run the maven project
+  Run as-->maven clean  //deleted previous generated files
+  Run as-->Maven Compile  //compiles the code or project
+  Run as-->Maven Package  //created the executable jar
+  Run as-->build-->enter goal as exec:java    //run the project (for this above three steps are compulsory)
+*************************************
+To create goal exec:java add this code or tags in pom.xml after <dependencies> tag ends
+ <build>
+	<plugins>
+		<plugin>
+			 <groupId>org.codehaus.mojo</groupId>
+			 <artifactId>exec-maven-plugin</artifactId>
+			 <version>1.4.0</version>
+				<configuration>
+					<mainClass>/target/classes/select your main class name></mainClass> ex:<mainClass>pratik.App</mainClass>
+				</configuratio<n>
+		</plugin>
+	</plugins>
+  </build>
+
+*************************************
+*************************************
+*************************************
+*************************************
+*************************************
+*************************************
+*************************************
+*************************************
